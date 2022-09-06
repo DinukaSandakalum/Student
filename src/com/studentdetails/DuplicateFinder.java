@@ -87,7 +87,7 @@ public class DuplicateFinder {
                 System.out.println(listOfStudent.get(i).getName()+" "+listOfStudent.get(i).getAge()+" "+listOfStudent.get(i).getSchool()+" ");
                 nameByStudent=listOfStudent.get(i);
                 break;
-            } else {
+            } else if(i==listOfStudent.size()-1){
                 throw new RuntimeException("StudentNotFoundException");
             }
         }
